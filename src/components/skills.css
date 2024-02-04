@@ -1,0 +1,50 @@
+/* Skills.css */
+.container {
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  overflow-x: auto;
+  min-width: 300px;
+}
+
+.icon-wrapper {
+  border: 4px solid #3498db;
+  padding: 20px 60px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.common-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  margin: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 980px) {
+  .icon-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 724px) {
+  .icon-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

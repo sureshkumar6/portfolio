@@ -1,0 +1,21 @@
+.image-container {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image-content {
+    flex: 0 0 auto; /* Allow the container to shrink, but not grow beyond max-width */
+    max-width: calc(20% - 20px);
+    min-width: 300px;
+    border: 4px solid #3498db;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,25 @@
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .introText {
+    max-width: 4000px; /* Adjust the max-width as needed */
+  }
+  
+  .profile {
+    margin-left: auto; /* Push profile to the right, aligning it to the center */
+  }
+  
+  .profile img {
+    max-width: 60%;
+    height: auto;
+  }
+  /* Add media query for responsiveness */
+@media screen and (min-width: 601px) {
+    .intro-container {
+      flex-direction: row; /* Display items side by side on larger screens */
+    }
+  }

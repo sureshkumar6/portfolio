@@ -1,0 +1,35 @@
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bio-text {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+  
+  .bio-image {
+    flex-basis: 30%; /* Set to full width by default */
+    margin-top: 20px; /* Add margin to separate from bio-text on small screens */
+  }
+  
+  .bio-image img {
+    max-width: 60%;
+    height: auto;
+  }
+  
+  /* Add media query for responsiveness */
+  @media screen and (max-width: 600px) {
+    .bio-text,
+    .bio-image {
+      flex-basis: 100%; /* Set to full width on small screens */
+      max-width: 100%; /* Allow both containers to take full width */
+    }
+  
+    .bio-image {
+      margin-top: 0; /* Remove margin on small screens */
+    }
+  }
+  

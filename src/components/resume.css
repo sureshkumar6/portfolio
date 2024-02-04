@@ -1,0 +1,12 @@
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 600px;
+    min-height: 500px;
+  }
+
+  .resume-pdf img {
+  width: 80%;
+  height:auto;
+}
